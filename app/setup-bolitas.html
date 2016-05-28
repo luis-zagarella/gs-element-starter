@@ -4,34 +4,40 @@
   <template>
     <style>
     </style>
-    <div>
-      <label for="rojas">Rojas:</label><input type="number" value="{{rojas::input}}"><br>
-      <label for="negras">Negras:</label><input type="number" value="{{negras::input}}"><br>  
-      <label for="azules">Azules:</label><input type="number" value="{{azules::input}}"><br>  
-      <label for="verdes">Verdes:</label><input type="number" value="{{verdes::input}}"><br>  
-    </div>
+      <div> 
+        <label>Rojas:</label><input id="rojas" type="number" value="{{rojas::input}}">
+      </div>
+      <div> 
+        <label>Negras:</label><input id="negras" type="number" value="{{negras::input}}">
+      </div>
+      <div> 
+        <label>Azules:</label><input id="azules" type="number" value="{{azules::input}}">
+      </div>
+      <div> 
+        <label>Verdes:</label><input id="verdes" type="number" value="{{verdes::input}}">
+      </div>
   </template>
   <script>
     Polymer({
       is: 'setup-bolitas',
       properties: {
         rojas: {
-          type: String,
-          value: ' '
+          type: Number,
+          value: 0,
         },
         negras: {
-          type: String,
-          value: ' '
+          type: Number,
+          value: 0,
         },
         azules: {
-          type: String,
-          value: ' '
+          type: Number,
+          value: 0,
         },
         verdes: {
-          type: String,
-          value: ' '
-        }
+          type: Number,
+          value: 0,
+        },
       }
-    });
-  </script>
+  });
+  </script>;
 </dom-module>
