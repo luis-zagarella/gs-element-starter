@@ -1,0 +1,37 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<dom-module id="setup-bolitas">
+  <template>
+    <style>
+    </style>
+    <div>
+      <label for="rojas">Rojas:</label><input type="number" value="{{rojas::input}}"><br>
+      <label for="negras">Negras:</label><input type="number" value="{{negras::input}}"><br>  
+      <label for="azules">Azules:</label><input type="number" value="{{azules::input}}"><br>  
+      <label for="verdes">Verdes:</label><input type="number" value="{{verdes::input}}"><br>  
+    </div>
+  </template>
+  <script>
+    Polymer({
+      is: 'setup-bolitas',
+      properties: {
+        rojas: {
+          type: String,
+          value: ' '
+        },
+        negras: {
+          type: String,
+          value: ' '
+        },
+        azules: {
+          type: String,
+          value: ' '
+        },
+        verdes: {
+          type: String,
+          value: ' '
+        }
+      }
+    });
+  </script>
+</dom-module>
